@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <title>Plotter</title>
+    <script type="module" src="test.js"></script>
+  </head>
+
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Plotly Bibliothek</p>
+        <p class="subtitle">Daten von CSV-Datei laden und plotten als Chart</p>
+      </div>
+    </section>
+
+    <div class = "container">
+      <div class="block">    
+        <div class="columns">
+          <div class="column is-6">
+            <div class="notification">
+              <p class="title is-5">Temperaturen im Jahresvergleich</p>
+              <p>Hinweis: Globale Temperaturen</p>              
+            </div>
+            <div id="plotter" style="width:150%;height:300%;"></div>     
+          </div>
+        </div>
+      </div>        
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-narrow">
+            <button class="button is-primary is-outlined" id="btnstart">Nicht aktiv</button>  
+          </div>
+        </div>
+      </div>
+
+      <canvas></canvas>
+      <div id="output"></div>
+    </div>
+</body>
+
+</html>
